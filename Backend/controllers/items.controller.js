@@ -14,6 +14,7 @@ exports.getAllItems = async (req, res) => {
 	}
 }
 
+
 /**
  * ### Description
  * Get an individual item

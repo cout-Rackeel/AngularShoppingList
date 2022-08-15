@@ -1,4 +1,4 @@
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ShoppingAddCategoryComponent } from './shopping-add-category/shopping-add-category.component';
 import { ShoppingAddComponent } from './shopping-add/shopping-add.component';
