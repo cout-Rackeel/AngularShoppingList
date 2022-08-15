@@ -1,16 +1,7 @@
-const express = require('express')
-const router = express.Router()
-const IndexController = require('../controllers/index.controller')
-const {
-	createItem,
-	deleteItemsById,
-	getAllItems,
-} = require('../controllers/items.controller')
+const express = require('express');
+const router = express.Router();
+const IndexController = require('../controllers/index.controller');
 
-router.route('/').get(IndexController.index)
-
-router.route('/shopping_list').post(createItem).get(getAllItems)
-
-router.route('/shopping_list/:id').delete(deleteItemsById)
+router.route('/').get(IndexController.index);
 
 module.exports = router

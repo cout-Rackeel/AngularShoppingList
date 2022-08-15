@@ -1,38 +1,20 @@
 <body class="body">
 
-  <!-- <div>
-    <button type="submit" class="add-btn">+</button>
-  </div> -->
   <div class="main-container" *ngFor="let item of items" class="list-item">
 
     <div class="main-header">
-      <h1>Category: {{item.category}}</h1>
+      <h1>Category: {{item.category.name}}</h1>
     </div>
 
     <div class="grid">
-      <ol>
-        <li>
           <p>Item Name: {{item.item_name}}</p>
           <p>Quantity: {{item.quantity}}</p>
           <p>Price: {{item.price}}</p>
-          <div>
-            <button class="del-btn">X</button>
+          <div class="btn-cont">
+            <button class="del-btn" (click)="deleteItem(item._id)">X</button>
+            <button class="del-btn" (click)="goToEdit(item._id)">Edit</button>
           </div>
-        </li>
-      </ol>
     </div>
 
   </div>
-
-
-  <!-- Colletions
-      - Item
-         - Category
-         - Price
-         - Amount
-
-      - Category
-         - Name -->
-
-
 </body>

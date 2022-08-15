@@ -9,7 +9,7 @@
       <div class="elipse size-6 location-6"></div>
       <div class="heading">
         <h1>Shopping List</h1>
-        <p>Add New Item</p>
+        <p>Edit New Item</p>
       </div>
 
     </div>
@@ -18,38 +18,39 @@
   <div class="shopping-form">
     <form
     action="">
-      <h1>Add New Item</h1>
+      <h1>Edit New Item</h1>
       <label for="">Item Name</label>
       <input type="text" name="item_name"  #item_name
-     required>
+      value="{{selectedItem.item_name}}" required>
 
       <label for="">Category</label>
       <select name="category" id="" #category  required>
 
-
+        <option value="{{selectedItem.category._id}}" selected>{{selectedItem.category.name}}</option>
         <option
         *ngFor="let category of categories"
-        value="{{category._id}}" >
+        value="{{category._id}}"
+        >
           {{category.name}}
         </option>
 
       </select>
 
       <label for="">Price</label>
-      <input type="number"  #price name="price"  min="1" required >
+      <input type="number"  #price name="price" value="{{selectedItem.price}}"  min="1" required >
 
       <label for="">Quantity</label>
-      <input type="number"  #quantity name="quantity" min="1" required>
+      <input type="number"  #quantity name="quantity" value="{{selectedItem.quantity}}" min="1" required>
 
 
-      <button type="button" (click)="onSubmit(
+      <button type="button" (click)="edit(
         {
         item_name: item_name.value.trim(),
         category: category.value.trim(),
         price: price.value,
         quantity: quantity.value
        }
-       )"> Add Item</button>
+       )"> Edit Item</button>
     </form>
   </div>
 </div>

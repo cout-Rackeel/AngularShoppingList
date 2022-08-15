@@ -9,12 +9,20 @@ import { ShoppingDisplayComponent } from './shopping-display/shopping-display.co
 import { ShoppingListServiceService } from './shopping-list-service.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
+import { ShoppingAddCategoryComponent } from './shopping-add-category/shopping-add-category.component';
+import { ShoppingEditCategoryComponent } from './shopping-edit-category/shopping-edit-category.component';
+import { ShoppingDisplayCategoriesComponent } from './shopping-display-categories/shopping-display-categories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShoppingAddComponent,
-    ShoppingDisplayComponent
+    ShoppingDisplayComponent,
+    ShoppingEditComponent,
+    ShoppingAddCategoryComponent,
+    ShoppingEditCategoryComponent,
+    ShoppingDisplayCategoriesComponent
   ],
   imports: [
     BrowserModule,

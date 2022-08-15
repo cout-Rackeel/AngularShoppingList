@@ -1,12 +1,14 @@
+import { Categories } from "./categories";
+
 export class Items{
-_id:String;
-item_name: String;
-category: String;
-price: Number;
-quantity: Number;
+_id:string;
+item_name: string;
+category: Categories;
+price: number;
+quantity: number;
 
 
-constructor(_id?: String, item_name?:String, category?:String, price?:Number, quantity?:Number){
+constructor(_id?: string, item_name?:string, category?:Categories, price?:number, quantity?:number){
   this._id = _id!;
   this.item_name = item_name!;
   this.category = category!;

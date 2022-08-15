@@ -1,25 +1,41 @@
 .navbar {
   display:inline-block;
-  padding: 20px;
-  height: 100px;
+  padding: 14px 16px;
+  height: 55px;
  width: 100%;
- background-color: #028476;
- color: aquamarine;
-
-
+ background-color: #BC8334;
+ color: white;
  }
 
  ul {
    list-style: none;
-
+   display: inline-flex;
+   gap: 1rem;
+   justify-content: center;
+   width: 100%;
  }
+  li{
+    border-radius: 3px;
+    background-image: linear-gradient(60deg , hsl(35, 27%, 47%)  ,#BC8334);
+    padding: 3px;
+    font-size: 18px;
+    transition: .12s;
+  }
  li:hover{
- color:whitesmoke;
+ color:white;
  font-size: 20px;
  transition: .1s;
  cursor: pointer;
+ padding: 4px;
+
  }
 
  h2 {
-   color: whitesmoke;
+   padding: 10px;
+   background-image: linear-gradient(60deg , wheat  ,#BC8334);
+   border-radius: 3px;
+   color: black;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 100;
+   box-shadow: 2px 2px 2px hsla(0, 0%, 20%, 0.466);
  }

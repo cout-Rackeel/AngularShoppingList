@@ -1,0 +1,32 @@
+
+
+<body class="body">
+
+  <!-- <div>
+    <button type="submit" class="add-btn">+</button>
+  </div> -->
+  <div class="main-container" *ngFor="let category of categories" class="list-item">
+
+    <div class="main-header">
+      <h1>Category: {{category.name}}</h1>
+    </div>
+
+        <div class="btn-cont">
+            <button class="del-btn" (click)="deleteCategory(category._id!)">X</button>
+            <button class="del-btn" (click)="goToEdit(category._id!)">Edit</button>
+        </div>
+
+  </div>
+
+
+  <!-- Colletions
+      - Item
+         - Category
+         - Price
+         - Amount
+
+      - Category
+         - Name -->
+
+
+</body>

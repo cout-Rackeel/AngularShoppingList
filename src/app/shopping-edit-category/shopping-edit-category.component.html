@@ -1,0 +1,39 @@
+<div class="shopping">
+  <div class="shop-image">
+    <div class="shop-details">
+      <div class="elipse size-1 location-1"></div>
+      <div class="elipse size-2 location-2"></div>
+      <div class="elipse size-3 location-3"></div>
+      <div class="elipse size-4 location-4"></div>
+      <div class="elipse size-5 location-5"></div>
+      <div class="elipse size-6 location-6"></div>
+      <div class="heading">
+        <h1>Shopping List</h1>
+        <p>Edit New Category</p>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="shopping-form">
+    <form
+    action="">
+      <h1>Edit New Category</h1>
+      <label for="">Category Name</label>
+      <input type="text" name="name"  #name
+      value="{{selectedCategory.name}}" required>
+
+
+      <button type="button" (click)="editCategory(
+        {
+        name: name.value.trim()
+        }
+       )">
+       Edit Category
+       </button>
+
+
+    </form>
+  </div>
+</div>
+
